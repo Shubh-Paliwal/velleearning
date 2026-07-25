@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        background-image: url('{% static 'VELLE EARNING.png' %}');
+        background-repeat: no-repeat;
+        background-size:  100%;
+
+
+    }
+    .tabtheme{
+        text-transform: uppercase;
+        font-family: arial;
+        text-align: center;
+        {#font-weight: bold  #}
+        {#font-style: italic #}
+        color: #1b1b1b;
+        height: 60px;
+         background-color:rgba(0,0,0,0.9);
+        border-radius:40px;
+        box-shadow: 10px 10px 10px white;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    h1{
+        font-family: "HoloLens MDL2 Assets";
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        color: white;
+    }
+</style>
+<body>
+<table width="100%" class="tabtheme">
+    <tr>
+        <td><a href="homelink">home</a> </td>
+        <td><a href="aboutus">About Us</a></td>
+        <td><a href="loginlink">login</a></td>
+        <td><a href="signuplink">sign up</a></td>
+        <td><a href="mailto:">Query</a></td>
+    </tr>
+</table>
+<h1>  WELLCOME TO THE VELLEEARNING PORTAL</h1>
+</body>
+</html>

@@ -1,0 +1,178 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        background-image: url('{% static 'login.jpg' %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .tabtheme{
+        text-transform: uppercase;
+        font-family: arial;
+        text-align: center;
+        {#font-weight: bold  #}
+        {#font-style: italic #}
+        color: #1b1b1b;
+        height: 60px;
+         background-color:rgba(0,0,0,0.9);
+        border-radius:40px;
+        box-shadow: 10px 10px 10px white;
+    }
+    .texttheme{
+        width: 200px;
+        height: 15px;
+        border: outset 4px;
+    }
+
+    .imagetheme{
+        align-self: center;
+        width: 150px;
+        height: 150px;
+    }
+    .divtheme{
+        width: 200px;
+        height: 10px;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        margin-left: 510px;
+        margin-top: 50px;
+        width: 500px;
+        height: 330px;
+        color:white;
+         font-family: arial;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .buttontheme{
+        margin-left: 50px;
+        vertical-align: middle;
+        align-self: center;
+        background-color: white;
+        font-color:black;
+    }
+    h1{
+        font-family: "HoloLens MDL2 Assets";
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        color: black;
+        font-family: arial;
+    }
+</style>
+<body>
+
+<table width="100%" class="tabtheme">
+    <tr>
+        <td><a href="homelink">home</a> </td>
+        <td><a href="aboutus">About Us</a></td>
+        <td><a href="signuplink">sign up</a></td>
+        <td><a href="mailto:">Query</a></td>
+    </tr>
+</table>
+
+</div>
+<h1>  WELLCOME TO THE VELLEEARNING PORTAL</h1>
+<div class="divtheme">
+
+    <table>
+        <td>
+            <td>
+
+<form action="logincodeaction" method="POST">
+    {% csrf_token %}
+                <table cellpadding="1px" cellspacing="5px"  align="center" style="border:solid;border-color:white;padding-top:30px">
+                <tr  style="color:white;text-align:center">
+                    <td>JOB PROVIDER LOGIN</td>
+                </tr>
+          <tr align="center" style="color:red">
+                    <td colspan="2">
+                        {{ message }}
+                    </td>
+          </tr>          
+        <tr>
+            <td>ID:</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="id" class="texttheme"></td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+        </tr>
+        <tr>
+            <td><input type="password" name="password" class="texttheme"></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" class="buttontheme" style="alignment-baseline: center"></td>
+        </tr>
+        <tr>
+             
+        </tr>
+
+    </table>
+</form>
+            </td>
+
+
+
+
+            <td>
+
+<form action="logincodeaction1" method="POST">
+    {% csrf_token %}
+
+                <table cellpadding="1px" cellspacing="5px"  align="center" style="border:solid;border-color:white;padding-top:30px">
+<tr  style="color:white;text-align:center">
+                    <td>JOB SEEKER LOGIN</td>
+                </tr>
+                    <tr align="center" style="color:red">
+                    <td colspan="2">
+                        {{ message1 }}
+                    </td>
+        <tr>
+            <td>ID:</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="id" class="texttheme"></td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+        </tr>
+        <tr>
+            <td><input type="password" name="password" class="texttheme"></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" class="buttontheme" style="alignment-baseline: center"></td>
+        </tr>
+        <tr>
+              <td>
+            </td>
+        </tr>
+
+    </table></form> </td>
+        </tr>
+    </table>
+
+    Not an existing user?<a href="signuplink" align="center">Click here to register </a>
+
+
+
+</div>
+</body>
+</html>

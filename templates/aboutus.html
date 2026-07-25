@@ -1,0 +1,92 @@
+{%  load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    body{
+        background-image: url('{% static 'Aboutus.jpg' %}');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .divtheme{
+        width: 600px;
+        height: 400px;
+        COLOR:black;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        margin-left:450px;
+        margin-top: -25px;
+        font-family: arial;
+
+    }
+    .tabtheme{
+        text-transform: uppercase;
+        font-family: arial;
+        text-align: center;
+        {#font-weight: bold  #}
+        {#font-style: italic #}
+        color: white;
+        height: 60px;
+         background-color:rgba(0,0,0,0.0);
+        border-radius:40px;
+        box-shadow: 10px 10px 10px black;
+    }
+    .texttheme{
+        width: 800px;
+        height: 30px;
+        border-radius: 20px;
+        border-image-outset: 10px;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    h1{
+        font-family: "HoloLens MDL2 Assets";
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        color: black;
+    }
+</style>
+<body>
+<table width="100%" class="tabtheme">
+    <tr>
+       <td><a href="homelink">Home</a></td>
+       <td><a href="aboutus">About Us</a></td>
+       <td><a href="feedbacklink">Feedback</a></td>
+       <td><a href="loginlink">Login</a></td>
+    </tr>
+</table>
+<div class="divtheme">
+    
+    <table cellpadding="5px" cellspacing="14px" align="center">
+        <tr>   <td><h1>About Velleearning </h1></td>
+</tr>
+        <tr>
+            <td class="texttheme">Welcome to VELLE EARNING.COM, where opportunities meet talent. We bridge the gap between job seekers and job providers, creating a seamless and efficient hiring experience for both.</td>
+            
+        </tr>
+        <br>
+        <tr>
+            <td class="texttheme">We understand that finding the right job can be challenging. That’s why we offer a platform where you can explore opportunities, connect with top employers, and build a career that aligns with your skills and aspirations.</td>
+        </tr>
+        <br>
+        <tr>
+            <td class="texttheme">Hiring the right talent is crucial for business success. Our platform simplifies the recruitment process, helping you find skilled professionals quickly and efficiently. Post jobs, review applications, and connect with the best candidates—all in one place.</td>
+        </tr>
+        <br>
+        <tr>
+            <td class="texttheme">At VELLE EARNING, we are more than just a job portal—we are a community that empowers careers and businesses. Join us today and take the next step toward success!</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

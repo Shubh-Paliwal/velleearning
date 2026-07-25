@@ -1,0 +1,165 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        background-image: url('{% static 'login.jpg' %}');
+        background-repeat: no-repeat;
+        background-size:  108%;
+
+
+    }
+
+    .tabtheme{
+        text-transform: uppercase;
+        font-family: arial;
+        text-align: center;
+        {#font-weight: bold  #}
+        {#font-style: italic #}
+        color: black;
+        height: 60px;
+         background-color:rgba(0,0,0,0.9);
+        border-radius:40px;
+        box-shadow: 10px 10px 10px white;
+    }
+    .texttheme{
+        width: 150px;
+        height: 20px;
+        border: outset 4px;
+        font-color: white;
+    }
+
+    .imagetheme{
+        align-self: center;
+        width: 100px;
+        height: 100px;
+    }
+    .divtheme{
+        width: 600px;
+        height: 400px;
+        COLOR:WHITE;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        margin-left:506px;
+        margin-top: -32px;
+        font-family: arial;
+
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .buttontheme{
+        margin-left: 50px;
+        vertical-align: middle;
+        align-self: center;
+        background-color: white;
+        font-color: white;
+    }
+h1{
+        font-family: "HoloLens MDL2 Assets";
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+     color: black;
+        font-family: arial;
+    }
+</style>
+<body>
+<table width="100%" class="tabtheme">
+    <tr>
+        <td><a href="homelink">home</a> </td>
+        <td><a href="aboutus">About Us</a></td>
+        <td><a href="loginlink">login</a></td>
+        <td><a href="mailto:">Query</a></td>
+    </tr>
+</table>
+<h1>  WELLCOME TO THE VELLEEARNING PORTAL</h1>
+<div class="divtheme">
+    <form action="signupcodeaction" method="POST">
+    {% csrf_token %}
+
+    <table cellpadding="5px" cellspacing="14px" >
+        
+        <tr>
+            <td>User ID:</td>
+            <td><input type="text" name="id" class="texttheme"></td>
+            <td>Password:</td>
+            <td><input type="password" name="password" class="texttheme"></td>
+        </tr>
+        <br>
+        <tr>
+
+        </tr>
+        <br>
+        <tr>
+            <td>FullName:</td>
+            <td><input type="text" name="fullname" class="texttheme"></td>
+            <td>Age: </td>
+            <td><input type="number" name="age" ></td>
+        </tr>
+        <tr>
+
+            <td>Permanent Address:</td>
+            <td><textarea name="address" class="texttheme"></textarea></td>
+             <td>Contact Number:</td>
+            <td><input type="number" name="contact" ></td>
+        </tr>
+        <tr>
+            <td>DOB:</td>
+            <td><input type="date" name="date" class="texttheme"></td>
+            <td>
+                Select category
+            </td>
+            <td>
+                <select class="texttheme" name="category">
+                    <option>select category</option>
+                    <option>Job Provider</option>
+                    <option>Job Seeker</option>
+                </select>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Email Address:</td>
+            <td><input name="email" type="email"></td>
+            <td>Subscription-Value:</td>
+            <td><select name="subscribe" class="checkbox-row">
+                <option>Yes</option>
+                <option>No</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td>Education:</td>
+            <td><select class="combo" name="education">
+                <option>Select Qualification</option>
+                <option>10th</option>
+                <option>12th</option>
+                <option>B.tech</option>
+                <option>B.E</option>
+                <option>BCA</option>
+                <option>BBA</option>
+            </select></td>
+            <td>Skills:</td>
+            <td><textarea name="skills" class="texttheme"></textarea></td>
+        </tr>
+        <tr>
+
+        </tr>
+        <tr  align="center">
+            <td  colspan="4"><input type="submit" class="buttontheme" style="alignment-baseline: center" value ="Signup">
+                Already user  <a href="loginlink">login</a></td>
+        </tr>
+    </table>
+    </form>
+</div>
+</body>
+</html>
