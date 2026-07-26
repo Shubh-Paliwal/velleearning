@@ -13,8 +13,6 @@ env/
 .idea/
 .vscode/
 
-# Database
-db.sqlite3
 
 # Environment Variables
 .env
