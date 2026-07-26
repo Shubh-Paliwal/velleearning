@@ -131,9 +131,9 @@ Screenshots will be added soon.
 
 **Shubh Paliwal**
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/Shubh-Paliwal
 
-LinkedIn: https://linkedin.com/in/YOUR_LINKEDIN
+LinkedIn: https://www.linkedin.com/in/shubh-paliwal-93b3b2325/
 
 ---
 
